@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <form id="loginForm" novalidate autocomplete="off">
+      <h2>Login</h2>
+
+      <!-- Email -->
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="Email"
+          placeholder="Enter your email"
+        >
+        <small class="emailError" id="emailError"></small>
+      </div>
+
+      <!-- Password -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="Password"
+          placeholder="Enter your password"
+        >
+        <small class="passwordError" id="passwordError"></small>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <div class="correct">
+            <p>Login Successfully !!!</p>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
