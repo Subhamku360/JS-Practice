@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .card {
+  height: 40%;
+  width: 40%;
+  background-color: white;
+  border-radius: 2rem;
+}
+.main .card .upper {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .card .upper .progress {
+  height: 30%;
+  width: 90%;
+  background-color: black;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.main .card .upper .progress .perce {
+  height: 100%;
+  width: 0%;
+  background-color: gray;
+  border-radius: 2rem;
+}
+.main .card .lower {
+  height: 70%;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+.main .card .lower .upper h1 {
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
+}
+.main .card .lower .lower h1 {
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+.main .card .lower .lower .btn {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.main .card .lower .lower .btn button {
+  padding: 0.8rem 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.main .card .lower .lower .btn button:active {
+  scale: 0.95;
+}/*# sourceMappingURL=style.css.map */
