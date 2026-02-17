@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.main .elements {
+  overflow: hidden;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.main .elements h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  mix-blend-mode: difference;
+}
+.main .elements img {
+  height: 250px;
+  width: 200px;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all linear 0.1s;
+}
+.main .element1 {
+  border-bottom: 2px solid white;
+}
+.main .element1 .image1 {
+  opacity: 0;
+}
+.main .element2 {
+  border-bottom: 2px solid white;
+}
+.main .element2 .image2 {
+  opacity: 0;
+}
+.main .element3 {
+  border-bottom: 2px solid white;
+}
+.main .element3 .image3 {
+  opacity: 0;
+}
+.main .element4 {
+  border-bottom: 2px solid white;
+}
+.main .element4 .image4 {
+  opacity: 0;
+}
+.main .element5 {
+  border-bottom: 2px solid white;
+}
+.main .element5 .image5 {
+  opacity: 0;
+  transform: translateY(-30%);
+}/*# sourceMappingURL=style.css.map */
