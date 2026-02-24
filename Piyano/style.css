@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.box{
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    border: 2px solid white;
+    /* background-color:burlywood ; */
+
+
+    .box:nth-child(2n){
+        background-color: white;
+        height: 100%;
+        width: 5%;
+        border: 2px solid black;
+    }
+
+}

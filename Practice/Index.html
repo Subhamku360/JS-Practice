@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Toggle</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      transition: background 0.3s ease, color 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      gap: 20px;
+    }
+
+    body.light {
+      background-color: white;
+      color: black;
+    }
+
+    body.dark {
+      background-color: #111;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Theme Toggle</h1>
+  <p id="modeText"></p>
+  <button id="themeBtn">Toggle Theme</button>
+
+  <script src="scipt.js"></script>
+
+</body>
+</html>

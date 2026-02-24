@@ -15,62 +15,62 @@ html, body {
   width: 100%;
   background-color: black;
   display: flex;
-  flex-direction: column;
-}
-.main .elements {
-  overflow: hidden;
-  height: 20%;
-  width: 100%;
-  display: flex;
-  padding: 1rem;
+  justify-content: center;
   align-items: center;
 }
-.main .elements h1 {
-  font-size: 5rem;
-  color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-weight: 700;
-  position: absolute;
-  z-index: 2;
-  mix-blend-mode: difference;
+.main .card {
+  height: 70%;
+  width: 30%;
+  background-color: white;
+  border: 5px solid blue;
+  border-radius: 1rem;
 }
-.main .elements img {
-  height: 250px;
-  width: 200px;
-  transform: translateX(-50%);
-  border-radius: 2rem;
+.main .card .upper {
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* prevent vertical wrapping */
+  overflow-x: scroll; /* enable horizontal scroll */
+  overflow-y: hidden; /* enable horizontal scroll */
+  padding: 2rem 1rem;
+  gap: 0.5rem;
+}
+.main .card .upper::-webkit-scrollbar {
+  display: none;
+}
+.main .card .upper .story {
+  flex-shrink: 0;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid red;
+  overflow: hidden;
+}
+.main .card .upper .story img {
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all linear 0.1s;
+  -o-object-position: center;
+     object-position: center;
 }
-.main .element1 {
-  border-bottom: 2px solid white;
+.main .card {
+  position: relative;
+  overflow: hidden;
 }
-.main .element1 .image1 {
-  opacity: 0;
+.main .card #full-screen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  background-size: cover;
 }
-.main .element2 {
-  border-bottom: 2px solid white;
-}
-.main .element2 .image2 {
-  opacity: 0;
-}
-.main .element3 {
-  border-bottom: 2px solid white;
-}
-.main .element3 .image3 {
-  opacity: 0;
-}
-.main .element4 {
-  border-bottom: 2px solid white;
-}
-.main .element4 .image4 {
-  opacity: 0;
-}
-.main .element5 {
-  border-bottom: 2px solid white;
-}
-.main .element5 .image5 {
-  opacity: 0;
-  transform: translateY(-30%);
+
+@media (min-width: 400px) and (max-width: 900px) {
+  .main .card {
+    width: 40%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(135deg, #153677, #4e085f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main #card {
+  min-width: 550px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+}
+#main #card #heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+#main #card #heading h1 {
+  color: #002765;
+}
+#main #card #heading .ri-list-check-3 {
+  font-size: 1.5rem;
+}
+#main #card #search {
+  background: #e6e6e6;
+  border-radius: 50px; /* pill shape */
+  display: flex;
+  align-items: center;
+  width: 95%;
+}
+#main #card #search input {
+  flex: 1; /* take remaining space */
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 15px 25px;
+  font-size: 14px;
+}
+#main #card #search button {
+  border: none;
+  background: #ff6a3d;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#main #card #search button:hover {
+  background: #e65c32;
+}
+#main #card #search button:active {
+  scale: 0.95;
+}
+#main #card #list {
+  margin-top: 1rem;
+  padding-left: 10px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+#main #card #list .items {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#main #card #list .items .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text{
+  text-decoration: line-through
+}
+
+
+#main #card #list .items .left input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* remove default style */
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgb(52, 51, 51);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+#main #card #list .items .left input:checked {
+  background-color: #ff8037;
+  border: none;
+}
+
+#main #card #list .items .left input:checked{
+  &::after {
+    /* //MAKE A TICK MARK */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    /* checkmark */
+    border: 2px solid #ff8037;
+  }
+}
+
+#main #card #list .items .right {
+  display: flex;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
