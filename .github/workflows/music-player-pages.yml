@@ -1,11 +1,11 @@
-name: Deploy Music Player to GitHub Pages
+name: Deploy Add-to-cart to GitHub Pages
 
 on:
   push:
     branches:
       - main
     paths:
-      - "Music Player/**"
+      - "Add-to-cart/**"
       - ".github/workflows/music-player-pages.yml"
   workflow_dispatch:
 
@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./Music Player"
+          path: "./Add-to-cart"
 
       - name: Deploy to GitHub Pages
         id: deployment

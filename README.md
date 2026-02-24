@@ -1,5 +1,5 @@
 # JS-Practice
 Basic Practice Code For DOM Manipulation and Form Validation
 
-## Music Player
+## Add-to-cart
 Live link: https://subhamku360.github.io/JS-Practice/
